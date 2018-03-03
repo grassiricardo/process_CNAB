@@ -10,15 +10,11 @@ It is necessary through a call via API to process a CNAB file where it contains 
 
 Only information on Debits and Credits should be processed and recorded in a secure way so that only accredited users can view.
 
-**Documentation for use both in development and production**
-
-**Documentation for Heroku**
+**Documentation for Heroku and Development**
 
 https://documenter.getpostman.com/view/1657038/process_cnab_api/RVnQmh66
 
-**Documentation for Development**
-
-https://documenter.getpostman.com/view/1657038/process_cnab_api/RVnPLPtQ
+to run in development change the base of the url to `localhost: 3000`
 
 **How to Use Via Heroku**
 
