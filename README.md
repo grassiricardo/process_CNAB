@@ -1,4 +1,7 @@
 **Test API Process CNAB for PagNet**
+![ruby](https://img.shields.io/badge/Ruby-2.4.1-green.svg)
+![rails](https://img.shields.io/badge/Rails-5.1.5-green.svg)
+[![Build Status](https://travis-ci.org/grassiricardo/process_CNAB.svg?branch=master)](https://travis-ci.org/grassiricardo/process_CNAB)
 
 **Description**
 It is necessary through a call via API to process a CNAB file where it contains several information which in turn will be partners for the use of the information.
@@ -24,7 +27,7 @@ Now to create the bank and perform the migrations run:
 Ready now just just upload the server using the `rails s`
 
 **Step by step process being executed with their respective calls**
-**NOTE**: Always remember that if you are running local should be added before the api route itself is the local path `localhost:3000` or if it is in production`https://process-cnab-api.herokuapp.com/`
+**NOTE**: Always remember that if you are running local should be added before the api route itself is the local path `localhost:3000` or if it is in production `https://process-cnab-api.herokuapp.com/`
 
 **First step** turn the call to `/api/v1/process_cnab`, this will cause the file that is already in the project root to be processed.
 
