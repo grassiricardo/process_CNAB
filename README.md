@@ -56,4 +56,8 @@ So that it is possible to present the transactions processed use the path `api/v
 
 **uid**
 
-These 3 keys are always returned when registering or when requesting a new key in the following route `/api/v1/auth/sign_in` informing your registered email and password.
+These 3 keys are always returned when registering or when requesting a new key in the following route `/api/v1/auth/sign_in` informing your registered email and password, or revalidate the token using the `api/v1/auth/validate_token` route passing the above parameters in a GET request, in the documentation is the example.
+
+Also if you have the need it will be possible to make filters by type_transaction, value, cpf and card. Just do the same request to the `api/v1/transactions` route and in this request pass the desired parameters. Example:
+
+`api/v1/transactions?type_transaction=1`, `api/v1/transactions?value=1000`
