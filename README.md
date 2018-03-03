@@ -27,9 +27,11 @@ With the path in a postman of life, you will be able to carry out both the proce
 **Running in Development**
 
 Clone Path Project https://github.com/grassiricardo/process_CNAB.git
+
 Run `bundle install` to install the project dependencies
-Now to create the bank and perform the migrations run:
-`rails db:create` and then `rails db:migrate`
+
+Now to create the bank and perform the migrations run `rails db:create` and then `rails db:migrate`
+
 Ready now just just upload the server using the `rails s`
 
 **Step by step process being executed with their respective calls**
@@ -50,13 +52,9 @@ To verify that the files have been processed successfully you should first be ac
 
 So that it is possible to present the transactions processed use the path `api/v1/transactions` and in the header of the request pass the keys to api to identify that you are already registered and you can use this information, the keys are:
 
-**access-token**
+**access-token, client, uid**
 
-**client**
-
-**uid**
-
-These 3 keys are always returned when registering or when requesting a new key in the following route `/api/v1/auth/sign_in` informing your registered email and password, or revalidate the token using the `api/v1/auth/validate_token` route passing the above parameters in a GET request, in the documentation is the example.
+These 3 keys are always returned when registering or when requesting a new key in the following route `/api/v1/auth/sign_in` informing your registered email and password.
 
 Also if you have the need it will be possible to make filters by type_transaction, value, cpf and card. Just do the same request to the `api/v1/transactions` route and in this request pass the desired parameters. Example:
 
