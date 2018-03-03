@@ -12,6 +12,12 @@ Only information on Debits and Credits should be processed and recorded in a sec
 
 **Documentation for use both in development and production**
 
+**Documentation for Heroku**
+
+https://documenter.getpostman.com/view/1657038/process_cnab_api/RVnQmh66
+
+**Documentation for Development**
+
 https://documenter.getpostman.com/view/1657038/process_cnab_api/RVnPLPtQ
 
 **How to Use Via Heroku**
