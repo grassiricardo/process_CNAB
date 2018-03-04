@@ -1,7 +1,8 @@
 class ProcessFile < ApplicationRecord
   validates :type_transaction, :date, :value, :cpf, :card, presence: true
 
-  before_save :value_exact, :transform_fuso
+  before_create :value_exact
+  before_create :transform_fuso
 
   private
 
